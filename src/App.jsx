@@ -6,9 +6,9 @@ import './App.css'
 const App = () => {
 
   return (
-    <>
+    <div>
       My Portfolio
-    </>
+    </div>
   )
 }
 
