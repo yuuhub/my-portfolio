@@ -1,17 +1,17 @@
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from '../Loader';
 
-const Computers = () => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
     <mesh>
       <primitive 
         object={computer.scene}
-        scale={0.75}
+        scale={isMobile ? 0.45 : 0.75}
         position={[0, -3.25, -1.5]}
         
       />
@@ -20,6 +20,24 @@ const Computers = () => {
 }
 
 const ComputerCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (mediaQuery) => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);  
+
   return (
     <Canvas
       frameloop="demand"
@@ -27,7 +45,7 @@ const ComputerCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-    <ambientLight intensity={2.2} />>
+    <ambientLight intensity={2.2} />
     <hemisphereLight
       skyColor={0xffffbb}
       groundColor="black"
@@ -40,7 +58,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} 
         />
-        <Computers />
+        <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
