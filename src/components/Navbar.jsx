@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className='w-full flex justify-between items-center max-w-7x1 mx-auto'>
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/' 
           className='flex items-center gap-2'
@@ -23,7 +23,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-13 h-10 object-contain' />
-          <p className='text-white text-[14px] font-medium cursor-pointer flex'>
+          <p className='text-white text-[16px] font-medium cursor-pointer flex'>
             Yuuri&nbsp;
           <span className='sm:block hidden'>| Full Stack Wordpress Developer</span></p>
         </Link>
