@@ -17,7 +17,8 @@ const Hero = () => {
             Full Stack Developer specializing in<br />
             Wordpress<br />
             React<br />
-            UI/UX Design
+            UI/UX Design<br />
+            SEO
           </p>
         </div>
       </div>
