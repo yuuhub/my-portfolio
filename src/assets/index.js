@@ -25,6 +25,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import gh360 from "./company/gh360-logo.svg";
+import self from "./company/self.png";
+import talkpush from "./company/talkpush.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,6 +59,9 @@ export {
   shopify,
   starbucks,
   tesla,
+  gh360,
+  self,
+  talkpush,
   carrent,
   jobit,
   tripguide,
