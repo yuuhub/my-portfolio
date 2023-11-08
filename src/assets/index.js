@@ -28,6 +28,7 @@ import tesla from "./company/tesla.png";
 import gh360 from "./company/gh360-logo.svg";
 import self from "./company/self.png";
 import talkpush from "./company/talkpush.png";
+import kalibrr from "./company/kalibrr.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -60,6 +61,7 @@ export {
   starbucks,
   tesla,
   gh360,
+  kalibrr,
   self,
   talkpush,
   carrent,

@@ -21,6 +21,7 @@ import {
     self,
     tesla,
     talkpush,
+    kalibrr,
     shopify,
     carrent,
     jobit,
@@ -49,7 +50,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Wordpress Developer",
       icon: mobile,
     },
     {
@@ -76,16 +77,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -129,6 +122,7 @@ import {
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Custom Wordpress development thru Advanced Custom Fields",
         "Making new pages for existing brands using Divi or custom code",
+        "Checking for cross browser compatibility",
       ],
     },
     {
@@ -148,26 +142,23 @@ import {
       title: "UI/UX Designer",
       company_name: "Talkpush Inc.",
       icon: talkpush,
-      iconBg: "#383E56",
+      iconBg: "#dcdcdc",
       date: "Jun 2018 - Aug 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "I was in charge of the entire design process. From user research, usability testing, feedback analysis, wireframing and overall UI design.",
+        "Audited the product to identify areas of improvement",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Product Designer",
+      company_name: "Kalibrr Technology Ventures Inc.",
+      icon: kalibrr,
+      iconBg: "#ffffff",
+      date: "2015 - 2016",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Defining feature specs and creating wireframes(information architecture and interaction), mockups to describe UX/UI, including visual and interaction design direction and execution.",
+        "Conducting user research and testing and interpreting analytics data.",
+        "Checking and reviewing designs from conception to production.",
       ],
     },
   ];
@@ -201,7 +192,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Sample #1",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -222,7 +213,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Sample #2",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -243,7 +234,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Sample #3",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
