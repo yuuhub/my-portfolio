@@ -4,26 +4,20 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
     docker,
-    meta,
-    starbucks,
     gh360,
     self,
-    tesla,
     talkpush,
     kalibrr,
-    shopify,
-    carrent,
+    firstbalfour,
     jobit,
     tripguide,
     threejs,
@@ -192,41 +186,45 @@ import {
   
   const projects = [
     {
-      name: "Sample #1",
+      name: "First Balfour Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Implementation of First Balfour's redesign, one of the largest energy companies in the Philippines. This was made using Divi with custom code and additional plugins. Role: Main Developer",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
+          name: "wordpress",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "divi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jQuery",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: firstbalfour,
+      source_code_link: "https://firstbalfour.com/",
     },
     {
-      name: "Sample #2",
+      name: "Myra Glowments page",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "New microsite/page for a leading cosmetics brand in the Philippines. This was implemented using custom coded child theme with Bootstrap, jQuery and SiemaJS for slider. Role: Main Developer",
       tags: [
         {
-          name: "react",
+          name: "wordpress",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "bootstrap",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "jquery",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "siemaJS",
           color: "pink-text-gradient",
         },
       ],
