@@ -21,6 +21,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    myra,
   } from "../assets";
   
   export const navLinks = [
@@ -207,7 +208,7 @@ import {
       source_code_link: "https://firstbalfour.com/",
     },
     {
-      name: "Myra Glowments page",
+      name: "Myra E 400 Page",
       description:
         "New microsite/page for a leading cosmetics brand in the Philippines. This was implemented using custom coded child theme with Bootstrap, jQuery and SiemaJS for slider. Role: Main Developer",
       tags: [
@@ -228,13 +229,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: myra,
+      source_code_link: "https://myra.com.ph/products/myra-400-e/",
     },
     {
       name: "Sample #3",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "TO BE FILLED",
       tags: [
         {
           name: "nextjs",
