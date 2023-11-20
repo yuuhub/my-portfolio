@@ -22,10 +22,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
+
+
 import gh360 from "./company/gh360-logo.svg";
 import self from "./company/self.png";
 import talkpush from "./company/talkpush.png";
@@ -36,6 +35,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import firstbalfour from "./first-balfour.png";
 import myra from "./myra.png";
+import drmitchell from "./dr-mitchell.png";
 
 export {
   logo,
@@ -60,10 +60,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   gh360,
   kalibrr,
   self,
@@ -72,5 +68,6 @@ export {
   jobit,
   tripguide,
   firstbalfour,
-  myra
+  myra,
+  drmitchell
 };

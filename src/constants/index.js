@@ -18,10 +18,10 @@ import {
     talkpush,
     kalibrr,
     firstbalfour,
-    jobit,
     tripguide,
     threejs,
     myra,
+    drmitchell
   } from "../assets";
   
   export const navLinks = [
@@ -233,25 +233,25 @@ import {
       source_code_link: "https://myra.com.ph/products/myra-400-e/",
     },
     {
-      name: "Sample #3",
+      name: "Dr Mitchell Dickey Private Practice Website",
       description:
-        "TO BE FILLED",
+        "Designed a private practice website for Dr Mitchell Dickey to provide online psychiatric services.",
       tags: [
         {
-          name: "nextjs",
+          name: "ui/ux",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "minimalist",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "freelancing",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: drmitchell,
+      source_code_link: "http://www.inspiringlife.online/clientProjProgress_Mitch/",
     },
   ];
   
