@@ -37,6 +37,7 @@ import firstbalfour from "./first-balfour.png";
 import myra from "./myra.png";
 import drmitchell from "./dr-mitchell.png";
 import unahco from "./unahco.png";
+import gta from "./gta.jpeg";
 
 export {
   logo,
@@ -71,5 +72,6 @@ export {
   firstbalfour,
   myra,
   drmitchell,
-  unahco
+  unahco,
+  gta
 };

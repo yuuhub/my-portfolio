@@ -21,7 +21,8 @@ import {
     threejs,
     myra,
     drmitchell,
-    unahco
+    unahco,
+    gta
   } from "../assets";
   
   export const navLinks = [
@@ -252,6 +253,27 @@ import {
       ],
       image: unahco,
       source_code_link: "https://unahco.com/",
+    },
+    {
+      name: "Grupong Tamang Alaga Website",
+      description:
+        "In charge of development of new pages/features and implementation of SEO for Grupong Tamang Alaga. I also manage content uploads and maintenace",
+      tags: [
+        {
+          name: "wordpress",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "seo",
+          color: "green-text-gradient",
+        },
+        {
+          name: "fullstack",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: gta,
+      source_code_link: "https://www.tamangalaga.com/ph/",
     },
     {
       name: "Dr Mitchell Dickey Private Practice Website",
