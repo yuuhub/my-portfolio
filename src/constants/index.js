@@ -18,10 +18,10 @@ import {
     talkpush,
     kalibrr,
     firstbalfour,
-    tripguide,
     threejs,
     myra,
-    drmitchell
+    drmitchell,
+    unahco
   } from "../assets";
   
   export const navLinks = [
@@ -231,6 +231,27 @@ import {
       ],
       image: myra,
       source_code_link: "https://myra.com.ph/products/myra-400-e/",
+    },
+    {
+      name: "UNAHCO Website and SEO",
+      description:
+        "In charge of development of new pages/features and implementation of SEO for UNAHCO group of websites. I also manage content uploads and maintenace for UNAHCO brands",
+      tags: [
+        {
+          name: "wordpress",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "seo",
+          color: "green-text-gradient",
+        },
+        {
+          name: "fullstack",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: unahco,
+      source_code_link: "https://unahco.com/",
     },
     {
       name: "Dr Mitchell Dickey Private Practice Website",

@@ -36,6 +36,7 @@ import tripguide from "./tripguide.png";
 import firstbalfour from "./first-balfour.png";
 import myra from "./myra.png";
 import drmitchell from "./dr-mitchell.png";
+import unahco from "./unahco.png";
 
 export {
   logo,
@@ -69,5 +70,6 @@ export {
   tripguide,
   firstbalfour,
   myra,
-  drmitchell
+  drmitchell,
+  unahco
 };
