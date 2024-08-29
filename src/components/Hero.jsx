@@ -3,8 +3,7 @@ import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 import { styles } from '../styles';
 
-const ComputersCanvas = lazy(() => import('./canvas/ComputersCanvas'));
-
+const ComputersCanvas = lazy(() => import('./canvas').then(module => ({ default: module.ComputersCanvas })));
 const Hero = () => {
     const [shouldRender3D, setShouldRender3D] = useState(false);
 
