@@ -8,6 +8,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 
+// eslint-disable-next-line react/prop-types
 const ExperienceCard = ({ experience }) => {
   return (
   <VerticalTimelineElement

@@ -22,7 +22,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-13 h-10 object-contain' />
+          <img src={logo} alt='logo' className='w-13 h-10 object-contain' loading={'lazy'} />
           <p className='text-white text-[16px] font-medium cursor-pointer flex'>
             Yuuri&nbsp;
           <span className='sm:block hidden'>| Full Stack Wordpress Developer</span></p>
