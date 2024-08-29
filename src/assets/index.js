@@ -1,43 +1,43 @@
 import logo from "./yuuri-logo-white.svg";
-import backend from "./backend.png";
+import backend from "./backend.webp";
 import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import link from "./link.png";
+import mobile from "./mobile.webp";
+import web from "./web.webp";
+import github from "./github.webp";
+import link from "./link.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
+import css from "./tech/css.webp";
+import docker from "./tech/docker.webp";
+import figma from "./tech/figma.webp";
+import git from "./tech/git.webp";
+import html from "./tech/html.webp";
+import javascript from "./tech/javascript.webp";
+import mongodb from "./tech/mongodb.webp";
+import nodejs from "./tech/nodejs.webp";
+import reactjs from "./tech/reactjs.webp";
+import redux from "./tech/redux.webp";
+import tailwind from "./tech/tailwind.webp";
+import typescript from "./tech/typescript.webp";
 import threejs from "./tech/threejs.svg";
 
 
 
 
 import gh360 from "./company/gh360-logo.svg";
-import self from "./company/self.png";
-import talkpush from "./company/talkpush.png";
-import kalibrr from "./company/kalibrr.png";
+import self from "./company/self.webp";
+import talkpush from "./company/talkpush.webp";
+import kalibrr from "./company/kalibrr.webp";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import firstbalfour from "./first-balfour.png";
-import myra from "./myra.png";
-import drmitchell from "./dr-mitchell.png";
-import unahco from "./unahco.png";
-import gta from "./gta.jpeg";
+import carrent from "./carrent.webp";
+import jobit from "./jobit.webp";
+import tripguide from "./tripguide.webp";
+import firstbalfour from "./first-balfour.webp";
+import myra from "./myra.webp";
+import drmitchell from "./dr-mitchell.webp";
+import unahco from "./unahco.webp";
+import gta from "./gta.webp";
 
 export {
   logo,
