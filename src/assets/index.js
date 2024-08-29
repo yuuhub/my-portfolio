@@ -1,6 +1,6 @@
 import logo from "./yuuri-logo-white.svg";
 import backend from "./backend.webp";
-import creator from "./creator.png";
+import creator from "./creator.webp";
 import mobile from "./mobile.webp";
 import web from "./web.webp";
 import github from "./github.webp";
