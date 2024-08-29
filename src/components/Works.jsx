@@ -32,6 +32,7 @@ const ProjectCard = ({
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
+            loading={'lazy'}
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -43,6 +44,7 @@ const ProjectCard = ({
                 src={link}
                 alt='link to'
                 className='w-10 h-10 object-contain'
+                loading={'lazy'}
               />
             </div>
           </div>
