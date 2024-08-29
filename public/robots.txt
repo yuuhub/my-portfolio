@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# No sitemap needed for a single-page website
