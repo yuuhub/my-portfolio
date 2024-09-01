@@ -1,11 +1,17 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState, useCallback } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene-draco.gltf');
+  const computer = useGLTF('./desktop_pc/scene-draco.gltf', true);
+
+  useEffect(() => {
+    return () => {
+      if (computer) computer.scene.dispose();
+    };
+  }, [computer]);
 
   return (
     <mesh>
@@ -22,21 +28,17 @@ const Computers = ({ isMobile }) => {
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  const handleMediaQueryChange = useCallback((event) => {
+    setIsMobile(event.matches);
+  }, []);
+
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
-
     setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (mediaQuery) => {
-      setIsMobile(mediaQuery.matches);
-    };
-
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);  
+    
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, [handleMediaQueryChange]);
 
   return (
     <Canvas

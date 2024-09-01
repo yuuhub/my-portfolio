@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect } from 'react';
+import React, { Suspense, lazy, useState, useEffect, useCallback } from 'react';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 import { styles } from '../styles';
@@ -7,14 +7,15 @@ const ComputersCanvas = lazy(() => import('./canvas').then(module => ({ default:
 const Hero = () => {
     const [shouldRender3D, setShouldRender3D] = useState(false);
 
-    useEffect(() => {
-        const checkRender = () => {
-            setShouldRender3D(window.innerWidth > 768); // Example: only render on larger screens
-        };
+    const checkRender = useCallback(() => {
+        setShouldRender3D(window.innerWidth > 768);
+    }, []);
 
+    useEffect(() => {
         checkRender();
-        window.addEventListener('resize', checkRender);
-        return () => window.removeEventListener('resize', checkRender);
+        const debouncedCheckRender = debounce(checkRender, 250);
+        window.addEventListener('resize', debouncedCheckRender);
+        return () => window.removeEventListener('resize', debouncedCheckRender);
     }, []);
 
     return (
@@ -62,5 +63,14 @@ const Hero = () => {
         </LazyMotion>
     );
 };
+
+// Debounce function to limit the rate of execution
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func(...args), wait);
+    };
+}
 
 export default Hero;
