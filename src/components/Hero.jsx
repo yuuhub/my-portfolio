@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect, useCallback } from 'react';
+import React, { Suspense, lazy, useState, useEffect } from 'react';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 import { styles } from '../styles';
@@ -7,16 +7,16 @@ const ComputersCanvas = lazy(() => import('./canvas').then(module => ({ default:
 const Hero = () => {
     const [shouldRender3D, setShouldRender3D] = useState(false);
 
-    const checkRender = useCallback(() => {
+    const checkRender = () => {
         setShouldRender3D(window.innerWidth > 768);
-    }, []);
+    };
 
     useEffect(() => {
         checkRender();
         const debouncedCheckRender = debounce(checkRender, 250);
         window.addEventListener('resize', debouncedCheckRender);
         return () => window.removeEventListener('resize', debouncedCheckRender);
-    }, []);
+    }, [checkRender]);
 
     return (
         <LazyMotion features={domAnimation}>
@@ -39,7 +39,7 @@ const Hero = () => {
                 </div>
 
                 {shouldRender3D && (
-                    <Suspense fallback={<div className="loading">Loading 3D model...</div>}>
+                    <Suspense fallback={<div>Loading 3D model...</div>}>
                         <ComputersCanvas />
                     </Suspense>
                 )}

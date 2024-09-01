@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 const Navbar = lazy(() => import('./components/Navbar'));
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="loading">Loading...</div>}>
           <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
             <Navbar />
             <Hero />
